@@ -497,7 +497,7 @@ i#next {
         font-size: 1rem;
         width: 150px;
     }
-    .description .text p{
+    #description .text p{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -505,7 +505,7 @@ i#next {
         width: 100px;
         font-size: 1rem;
     }
-    .description .text a button{
+    #description .text a button{
         font-size: 1rem;
     }
 
@@ -554,7 +554,7 @@ i#next {
         align-items: center;
         flex-direction: column;
     }
-    .description img{
+    #description img{
         width: 100px;
         height: 200px;
     }
