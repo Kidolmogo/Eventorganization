@@ -263,21 +263,17 @@ body{
 
 #founders #main{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 90px;
-}
-
-#founders #main{
-    display: flex;
     gap: 20px;
     background-color: var(--Color--);
     color: var(--White--);
     width: 860px;
     padding: 40px;
     border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 90px;
 }
 #founders #main .text p{
     display: flex;
