@@ -1,0 +1,481 @@
+/*Global styles*/
+*{
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+/*Home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding:120px;
+    background-image: url("background\ \(2\).png");
+    background-size: cover;
+}
+#motto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 350px;
+    background-color: var(--White--);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+#motto .motto h1{
+    text-align: center;
+}
+#home .button button{
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: none;
+}
+
+#home .button .colored{
+    background-color: var(--Color--);
+    color: var(--White--);
+    font-family:var(--Font-family);
+}
+#home .button .uncolored{
+    background-color: var(--White--);
+    color: var(--Color--);
+    font-family:var(--Font-family);
+    border: 1px solid var(--Color--);
+}
+#home .button .colored:hover{
+    background-color: var(--White--);
+    color: var(--Black--);
+    border: 1px solid var(--Color--);
+    transition: 0.8s linear;
+}
+#home .button .uncolored:hover{
+    background-color: var(--Color--);
+    color: var(--White--);
+    transition: 0.8s linear;
+}
+
+/*Founders*/
+#founders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 8%;
+    padding: 70px;
+}
+
+#founders h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#founders #main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 90px;
+}
+
+#founders article{
+    display: flex;
+    gap: 20px;
+    background-color: var(--Color--);
+    color: var(--White--);
+    width: 860px;
+    padding: 40px;
+    border-radius: 20px;
+}
+#founders article .text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#founder article .text span , li , p{
+    display: flex;
+    gap: 20px;
+}
+#founder article .text p li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#founders article .text span{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+#founders article .text li {
+    display: inline-block;
+    margin: 20px;
+    list-style:circle;
+    
+}
+#founders article .text li a{
+    color: var(--White--);
+}
+#founders article .profile
+#founders article img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+#founders article p{
+    text-align: center;
+}
+
+/*Our company*/
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 7%;
+}
+
+#about #title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#about #cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#about #cards article{
+    width:400px;
+    height: 400px;
+    background-color: var(--White--);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+    transition: 2s all ease-in-out;
+}
+
+.mission,
+.vision,
+.values{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border-top: 10px solid var(--Color--);
+    border-top-right-radius: 10px;
+}
+
+.vision h1,
+.mission h1,
+.values h1{
+    font-size: 1.5rem;
+    color: var(--Color--);
+}
+
+.vision p,
+.mission p,
+.values p{
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*Whatwedo*/
+#whatwedo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 8%;
+    padding: 40px;
+}
+
+#whatwedo #title h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#whatwedo #main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#whatwedo article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 400px;
+}
+
+#whatwedo .one, .two{
+    border-right: 3px solid var(--Color--);
+}
+
+#whatwedo article h1{
+    font-size: 1.7rem;
+    color: var(--Color--);
+}
+
+#whatwedo article p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    width: 300px;
+}
+
+#whatwedo article img{
+    width: 150px;
+    height: 150px;
+}
+
+/*Story*/
+#story{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 8%;
+}
+
+#story .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#story .text h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#story .text p{
+    font-size: 1.2rem;
+    width: 500px;
+    text-align: center;
+}
+
+#story .image img{
+    width:500px;
+    height: 400px;
+}
+
+#teams{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 8%;
+    gap: 20px;
+    padding: 60px;
+}
+
+#teams #title h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#teams #main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+#teams #main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#teams #main article img{
+    width: 250px;
+}
+
+#teams #main article h1{
+    font-size: 1.5rem;
+    color: var(--Color--);
+}
+
+#teams #main article p{
+    font-size: 1rem;
+    color: var(--Black--);
+}
+.hidden{
+    opacity: 0;
+    transform: translateX(-600px);
+    transition: all 3s;
+  }
+  
+.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+/*Scroll bar*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--LightGray--); 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--Color--); 
+}
+
+@media(max-width:1024px){
+    #header{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #header .image img{
+       display: none;
+    }
+   }
+   @media(max-width:768px){
+    .motto{
+        font-size: 2rem;
+        width: 400px;
+        text-align: center;
+    }
+    #whatwedo .title h1 , #founders #title h1 , #story .text h1 , #teams #title h1{
+        font-size: 1.2rem;
+    }
+    #about #cards article{
+        width: 320px;
+    }
+    header,main,footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .desktop #btn{
+        display: none;
+    }
+    .cursor{
+        display: none;
+    }
+    .cards{
+        width: 100px;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .hidden{
+        opacity: 1;
+        transform:none;
+        transition: none;
+      }
+      
+    .show {
+        opacity: 1;
+        transform: none;
+      }
+      #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .logo_and_join , .subnote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    #whatwedo .one, .two , .three{
+    font-size: 1rem;
+    border-right: none;
+    border-top: 3px solid var(--Color--);
+    border-bottom: 3px solid var(--Color--);
+    }
+    #whatwedo .two{
+        border-top: none;
+    }
+    #whatwedo .three{
+        border-top: none;
+    }
+    #teams #main article img{
+    width: 150px;
+    } 
+    #teams #main article p{
+        font-size: 1rem;
+        color: var(--Color--);
+    }
+     #founders #main .two{
+        font-size: 1rem;
+        width: 300px;
+     }
+    .cursor{
+    display: none;
+    }
+}
+@media(max-width:425px){
+    header,main,footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cursor{
+        display: none;
+    }
+    .desktop #links {
+        display: none;
+    }
+    .desktop #btn{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+

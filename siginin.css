@@ -1,0 +1,128 @@
+/*Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: none;
+}
+:root{
+    --Color--:#F04C54;
+    --White--:white;
+    --Black--:black;
+    --Font-family--:'Poiret One', sans-serif;
+}
+body{
+    font-family: var(--Font-family--);
+    cursor: none;
+}
+/*main*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
+    
+}
+main #main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+main #main .h1 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--Color--);
+}
+form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 20rem;
+    border: 1px solid var(--Color--);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--Font-family);
+    cursor: none;
+}
+form input:focus{
+    outline: var(--Color--);
+}
+main #main #button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.request{
+    width: 8rem;
+    background-color: var(--Color--);
+    color: var(--White--);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--Font-family--);
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s linear;
+    cursor: none;
+}
+.request:hover{
+    color: var(--Black--);
+    border: 1px solid var(--Black--);
+}
+.request::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--White--);
+    transition: 0.8s width;
+}
+.request:hover::before{
+    width: 100%;
+}
+
+.signin{
+    width: 8rem;
+    background-color: var(--White--);
+    color: var(--Black--);
+    padding: 10px;
+    border: 1px solid var(--Black--);
+    border-radius: 10px;
+    font-family: var(--Font-family--);
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s linear;
+    cursor: none;
+}
+.signin:hover{
+    color: var(--White--);
+    cursor: none;
+    border: 1px solid var(--Color--);
+}
+.signin::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--Color--);
+    transition: 0.8s width;
+}
+.signin:hover::before{
+    width: 100%;
+    cursor: none;
+}

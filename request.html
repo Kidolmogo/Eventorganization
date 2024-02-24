@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inria+Sans:wght@300&family=Poiret+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/request.css">
+    <title>Request</title>
+</head>
+<body>
+    <!--Header-->
+<header>
+    <!--Desktop navigation-->
+<nav class="desktop">
+  <section id="logo">
+    <a href="home.html"><img src="Images/logo.png" alt=""></a>
+  </section>
+  <section id="links">
+    <ul>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </section>
+  <section id="btn">
+    <a href="request.html"><button>Request event</button></a>
+  </section>
+  <section id="hamburger">
+    <li class="hamburger_icon">
+      <span></span>
+    </li>
+  </section>
+</nav>
+<!--Mobile navigation-->
+<nav class="mobile">
+  <ul>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="request.html"><button>Request event</button></a></li>
+    <li><a href="signin.html"><button>Get started</button></a></li>
+  </ul>
+</nav>
+</header>
+    <!-- Main Content -->
+    <main>
+        <section id="main">
+            <article class="h1">
+                <h1>Request</h1>
+            </article>
+            <article class="form">
+                <form id="form">
+                    <article>
+                        <input type="text" placeholder="Full name">
+                        <input type="email" placeholder="Email" name="email" id="email">
+                    <article>
+                        <input type="tel" placeholder="Phone" name="phone" id="phone">
+                        <input type="date" name="date" id="date">
+                    </article>
+                    <article>
+                        <textarea cols="53" rows="10" name="message" id="message">Describe the event shortly</textarea>
+                    </article>  
+                    <article class="btn">
+                        <button type="submit" class="request" id="button">Request event</button>
+                    </article>
+                </form>
+                <div id="popup-container"></div>
+            </article>
+           
+        </section>
+    </main>
+<!--Cursor-->
+    <div class="cursor">
+        <img src="Images/Select Cursor.png" alt="">
+    </div>
+<!--Backend Scripts-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">emailjs.init('u7_xV1i8uJHXbVsUk')</script>
+<!--Local scripts-->
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/send.js"></script>
+</body>
+</html>

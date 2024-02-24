@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inria+Sans:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+   <!--Header-->
+   <header>
+    <!--Desktop navigation-->
+<nav class="desktop">
+  <section id="logo">
+    <a href="home.html"><img src="Images/logo.png" alt=""></a>
+  </section>
+  <section id="links">
+    <ul>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </section>
+  <section id="btn">
+    <a href="request.html"><button>Request event</button></a>
+  </section>
+  <section id="hamburger">
+    <li class="hamburger_icon">
+      <span></span>
+    </li>
+  </section>
+</nav>
+<!--Mobile navigation-->
+<nav class="mobile">
+  <ul>
+    <li><a href="news.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="request.html"><button>Request event</button></a></li>
+    <li><a href="signin.html"><button>Get started</button></a></li>
+  </ul>
+</nav>
+</header>
+<!--Main-->
+<main>
+    <section id="main">
+        <article class="register">
+            <div class="title">
+                <h1>Get in touch</h1>
+            </div>
+            <div class="form">
+                <form id="form">
+                    <label for="Full name">Full name</label>
+                    <input type="text" placeholder="Full name" name="name" id="name">
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="Email" name="email" id="email">
+                    <label for="Leave a message">Leave a message</label>
+                    <textarea name="message" id="message" rows="10">Your message goes here...</textarea>
+                    <button type="submit" id="button">Send</button><div id="popup-container"></div>
+                </form>
+            </div>
+            
+        </article>
+        <article class="info">
+            <div class="title">
+                <h1>More information</h1>
+            </div>
+            <div class="socials">
+                <figure class="email">
+                    <span>Email</span>
+                    <p>brightevent.org@gmail.com</p>
+                </figure>
+                <figure class="location">
+                    <span>Location</span>
+                    <p>Addis Ababa, Ethiopia</p>
+                </figure>
+                <figure class="phone">
+                     <span>Phone</span>
+                     <p>
+                        <li>+251 118 601 754</li>
+                        <li>+251 911 416 331</li>
+                        <li>+251 942 378 247</li>
+                     </p>
+                </figure>
+                <figure>
+                    <span>Social Media</span>      
+                </figure>
+            </div>
+            <div class="button">
+                <button><ion-icon name="logo-instagram" size="large"></ion-icon></button>
+                <button><ion-icon name="logo-twitter" size="large"></ion-icon></button>
+                <button><ion-icon name="logo-facebook" size="large"></ion-icon></button>
+            </div>
+        </section>
+</main>
+<!--Cursor-->
+    <div class="cursor">
+    <img src="Images/Select Cursor.png" alt="">
+    </div>
+<!--Icons Script-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--Backend Scripts-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('u7_xV1i8uJHXbVsUk')</script>
+<!--Local Scripts-->
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/send.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

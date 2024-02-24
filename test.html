@@ -1,0 +1,157 @@
+<section id="about">
+    <div class="about-slider">
+      <div class="slider-images">
+        <img src="Images/].PNG" alt="Slider image 1" class="slider-img">
+        <img src="profile-image-2.png" alt="Slider image 2" class="slider-img">
+        <img src="profile-image-2.png" alt="Slider image 3" class="slider-img">
+      </div>
+  
+      <ul class="slider-dots">
+        <li class="dot active"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
+    </div>
+  
+    <article class="title">
+      <h1>About</h1>
+    </article>
+    <article class="cards">
+      </article>
+  </section>
+<script>
+    const slider = document.querySelector('.about-slider');
+const sliderImages = slider.querySelectorAll('.slider-img');
+const dots = slider.querySelectorAll('.dot');
+
+let currentSlide = 0;
+let slideInterval = null;
+
+// Function to switch slides
+function showSlide(index) {
+  sliderImages.forEach((img, i) => {
+    img.classList.remove('active');
+  });
+
+  sliderImages[index].classList.add('active');
+
+  currentSlide = index;
+}
+
+// Function to handle the slide transition
+function animateSlide(fromIndex, toIndex) {
+  sliderImages[fromIndex].style.transform = `translateX(0)`;
+  sliderImages[toIndex].style.transform = `translateX(100%)`; // Adjust based on desired transition distance
+
+  setTimeout(() => {
+    sliderImages[fromIndex].style.transform = `translateX(-100%)`;
+    sliderImages[toIndex].style.transform = `translateX(0)`;
+  }, 0); // Apply transition immediately
+
+  setTimeout(() => {
+    sliderImages[fromIndex].classList.remove('active');
+  }, 3000); // Wait for transition duration before removing active class
+}
+
+// Start the slider with autoplay
+function startSlider() {
+  slideInterval = setInterval(() => {
+    const nextSlide = (currentSlide + 1) % sliderImages.length;
+    animateSlide(currentSlide, nextSlide);
+  }, 3000); // Set your desired autoplay interval
+}
+
+// Dot navigation click event
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    if (i !== currentSlide) {
+      clearInterval(slideInterval);
+      animateSlide(currentSlide, i);
+      startSlider(); // Restart autoplay after manual control
+    }
+  });
+});
+
+// Start the slider and ensure dots reflect initial state
+startSlider();
+dots[currentSlide].classList.add('active');
+
+</script>  
+<style>
+    /* CSS for the slider */
+
+.about-slider {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto; /* Center horizontally */
+  position: relative; /* For slider dots */
+}
+
+.slider-images {
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflowing images */
+  position: relative; /* For image transitions */
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill entire slider area */
+  transition: transform 3s ease-in-out; /* Smooth transition */
+  position: absolute; /* Allow overlapping for transitions */
+  top: 0;
+  left: 0;
+}
+
+.slider-img.active {
+  transform: translateX(0); /* Show current image */
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff; /* Adjust color as needed */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  padding: 5px 10px; /* Adjust padding as needed */
+}
+
+.slider-nav button:hover {
+  opacity: 0.7; /* Adjust hover opacity as needed */
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-dots li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Adjust dot color as needed */
+  opacity: 0.5;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-dots li.active {
+  background-color: #fff; /* Adjust active dot color as needed */
+  opacity: 1;
+}
+
+</style>
