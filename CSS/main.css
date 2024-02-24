@@ -318,6 +318,14 @@ footer button:hover::before{
   
 }
 @media(max-width:425px){
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px; 
+        align-items: center;
+
+    }
     body{
         overflow-x: hidden;
     }
