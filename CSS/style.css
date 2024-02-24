@@ -385,6 +385,9 @@ i#next {
     background-color: var(--Color--);
 }
     @media(max-width:768px){
+    *{
+        cursor: none;
+    }
     header,main,footer{
         display: flex;
         flex-direction: column;
@@ -437,6 +440,11 @@ i#next {
     }
     }
     @media(max-width:468px){
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+
+    }
     .desktop #btn{
         display: none;
     }
@@ -484,7 +492,7 @@ i#next {
         font-size: 1.5rem;
     }
     .cards{
-        width: 100px;
+        width: 90px;
     }
     #services{
         padding: 0;
@@ -494,6 +502,10 @@ i#next {
         width: 150px;
     }
     .description .text p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         width: 400px;
         font-size: 1rem;
     }
