@@ -175,7 +175,7 @@ body{
     color: #205c20;
 }
 .card-item h3 {
-    color: #000;
+    color: var(--Black--);
     font-size: 1.438rem;
     margin-top: 28px;
     font-weight: 600;
@@ -187,15 +187,15 @@ body{
     transform: rotate(-35deg);
     height: 40px;
     width: 40px;
-    color: #000;
-    border: 1px solid #000;
+    color: var(--Black--);
+    border: 1px solid var(--Black--);
     border-radius: 50%;
     margin-top: 40px;
     transition: 0.2s ease;
 }
 .card-list .card-item:hover .arrow  {
-    background: #000;
-    color: #fff; 
+    background: var(--Black--);
+    color: var(--White--); 
 }
 /*Founders*/
 #founders{
