@@ -227,7 +227,7 @@ body{
 }
 
 #description .text p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 500px;
     text-align: center;
 }
@@ -300,9 +300,8 @@ body{
     color: var(--Color--);
 }
 .title{
-    display: flex;
-    justify-content: right;
-    align-items:center;
+    position: relative;
+    left: 70%;
 }
 .title h1{
     font-size: 2rem;
