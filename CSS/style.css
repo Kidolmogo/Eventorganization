@@ -548,4 +548,7 @@ i#next {
     .join ion-icon{
         display: none;
     }
+    #wrapper{
+        width: 40px;
+    }
     }
