@@ -125,14 +125,15 @@ body{
     font-size: 1rem;
 }
 /*Whatwedo*/
-.wrapper{
+.wrapper {
     position: relative;
     max-width: 1130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto; 
   }
-.wrapper .cart-nav{
+  .wrapper .cart-nav {
     position: absolute;
     right: 0;
     top: -35%;
@@ -143,7 +144,7 @@ body{
     display: flex;
     cursor: pointer;
     justify-content: space-evenly;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
   }
 .cart-nav .icon{
     color: #ff7979;
