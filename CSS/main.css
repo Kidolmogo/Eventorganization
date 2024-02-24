@@ -250,6 +250,9 @@ footer button:hover::before{
 
 }
 @media(max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
     .desktop #logo span{
     font-size: 1.5rem;
     }
@@ -315,6 +318,9 @@ footer button:hover::before{
   
 }
 @media(max-width:425px){
+    body{
+        overflow-x: hidden;
+    }
     .desktop{
         display: flex;
         justify-content: center;
