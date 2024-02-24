@@ -227,7 +227,7 @@ body{
 }
 
 #description .text p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 500px;
     text-align: center;
 }
@@ -301,7 +301,7 @@ body{
 }
 .title{
     position: relative;
-    left: 70%;
+    left: 50%;
 }
 .title h1{
     font-size: 2rem;
