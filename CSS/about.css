@@ -4,6 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+:root{
+   --Pink--:#B22485; 
+   --Green--:#205c20;
+   --Blue:#2968a8;
+}
 body{
     overflow-x: hidden;
 }
@@ -139,17 +144,15 @@ body{
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
     list-style: none;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     border: 2px solid transparent;
     transition: border 0.5s ease;
 }
 .card-list .card-item:hover {
-    border: 2px solid var(--Black--);
+    border: 2px solid var(--Color--);
 }
 .card-list .card-item img {
-    width: 100%;
-    aspect-ratio: 16/9;
     border-radius: 8px;
     object-fit: cover;
 }
@@ -164,15 +167,15 @@ body{
 }
 .card-list .developer {
     background-color: #F7DFF5; 
-    color: #B22485;
+    color:var(--Pink--);
 }   
 .card-list .designer {
     background-color: #d1e8ff;
-    color: #2968a8;
+    color: var(--Blue--);
 }
 .card-list .editor {
     background-color: #d6f8d6; 
-    color: #205c20;
+    color: var(--Green--);
 }
 .card-item h3 {
     color: var(--Black--);
@@ -195,7 +198,7 @@ body{
 }
 .card-list .card-item:hover .arrow  {
     background: var(--Color--);
-    color: var(--White--); 
+    color: var(--Color--); 
 }
 /*Founders*/
 #founders{
