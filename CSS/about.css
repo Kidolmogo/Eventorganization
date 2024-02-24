@@ -63,6 +63,67 @@ body{
     color: var(--White--);
     transition: 0.8s linear;
 }
+/*Our company*/
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    margin-top: 7%;
+}
+
+#about #title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--Color--);
+}
+
+#about #cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#about #cards article{
+    width:400px;
+    height: 400px;
+    background-color: var(--White--);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+    transition: 2s all ease-in-out;
+}
+
+.mission,
+.vision,
+.values{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border-top: 10px solid var(--Color--);
+    border-top-right-radius: 10px;
+}
+
+.vision h1,
+.mission h1,
+.values h1{
+    font-size: 1.5rem;
+    color: var(--Color--);
+}
+
+.vision p,
+.mission p,
+.values p{
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+}
 
 /*Founders*/
 #founders{
@@ -137,123 +198,6 @@ body{
 
 #founders article p{
     text-align: center;
-}
-
-/*Our company*/
-#about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:30px;
-    margin-top: 7%;
-}
-
-#about #title h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--Color--);
-}
-
-#about #cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 60px;
-}
-
-#about #cards article{
-    width:400px;
-    height: 400px;
-    background-color: var(--White--);
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
-    transition: 2s all ease-in-out;
-}
-
-.mission,
-.vision,
-.values{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
-    border-top: 10px solid var(--Color--);
-    border-top-right-radius: 10px;
-}
-
-.vision h1,
-.mission h1,
-.values h1{
-    font-size: 1.5rem;
-    color: var(--Color--);
-}
-
-.vision p,
-.mission p,
-.values p{
-    width: 300px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-/*Whatwedo*/
-#whatwedo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
-    margin-top: 8%;
-    padding: 40px;
-}
-
-#whatwedo #title h1{
-    font-size: 2rem;
-    color: var(--Color--);
-}
-
-#whatwedo #main{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#whatwedo article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    width: 400px;
-}
-
-#whatwedo .one, .two{
-    border-right: 3px solid var(--Color--);
-}
-
-#whatwedo article h1{
-    font-size: 1.7rem;
-    color: var(--Color--);
-}
-
-#whatwedo article p{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    width: 300px;
-}
-
-#whatwedo article img{
-    width: 150px;
-    height: 150px;
 }
 
 /*Story*/
