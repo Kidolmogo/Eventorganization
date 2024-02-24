@@ -549,6 +549,20 @@ i#next {
         display: none;
     }
     #wrapper{
-        width: 40px;
+        width: 100px;
+    }
+    .description p{
+        font-size: 1.4rem;
+        width: 100px;
+    }
+    #footer .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .description img{
+        width: 100px;
+        height: 200px;
     }
     }
