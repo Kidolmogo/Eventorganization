@@ -134,7 +134,7 @@ body{
     gap: 20px;
 }
 .card-list .card-item {
-    background: #fff;
+    background: var(--White--);
     padding: 26px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
@@ -145,7 +145,7 @@ body{
     transition: border 0.5s ease;
 }
 .card-list .card-item:hover {
-    border: 2px solid #000;
+    border: 2px solid var(--Black--);
 }
 .card-list .card-item img {
     width: 100%;
@@ -194,7 +194,7 @@ body{
     transition: 0.2s ease;
 }
 .card-list .card-item:hover .arrow  {
-    background: var(--Black--);
+    background: var(--Color--);
     color: var(--White--); 
 }
 /*Founders*/
