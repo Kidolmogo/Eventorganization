@@ -299,6 +299,15 @@ body{
     font-size: 2rem;
     color: var(--Color--);
 }
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    font-size: 1.5rem;
+    color: var(--Color--);
+}
 #wrapper {
     display: flex;
     max-width: 650px;
