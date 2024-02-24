@@ -321,8 +321,6 @@ footer button:hover::before{
     .desktop{
         display: flex;
         justify-content: space-between;
-        margin: 2px;
-        padding: 10px; 
         align-items: center;
         gap: 20px;
     }
