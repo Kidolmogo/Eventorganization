@@ -290,6 +290,7 @@ body{
 #ending #marquee marquee{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 320px;
     height: 250px;
     gap: 20px;
