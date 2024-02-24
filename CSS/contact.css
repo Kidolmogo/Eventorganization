@@ -1,0 +1,274 @@
+/*Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --Success--:green;
+    --Failed--:red;
+    --White-Gray--:#ccc;
+}
+body{
+    cursor: none;
+}
+/*Main*/
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 2%;
+}
+    /*register*/
+.register h1{
+    font-size:2rem;
+    color: var(--Color--);
+}
+.register form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+}
+.register form input{
+    width: 20rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--Black--);
+    font-family: var(--Font-family--);
+    cursor: none;
+}
+.register form textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: none;
+    border-radius: 10px;
+    font-family: var(--Font-family--);
+    font-size: 1rem;
+    width: 20rem;
+    cursor: none;
+}
+.register form button{
+    width: 8rem;
+    background-color: var(--Color--);
+    color: var(--White--);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--Font-family--);
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s linear;
+    cursor: none;
+}
+.register form button:hover{
+    color: var(--Black--);
+    border: 1px solid var(--Black--);
+}
+.register form button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--White--);
+    transition: 0.8s width;
+}
+.register form button:hover::before{
+    width: 100%;
+} 
+/*Info*/
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--Color--);
+    color: var(--White--);
+    width: 17rem;
+    height: 28rem;
+    border-radius: 10px;
+}
+.info .title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.info .socials{
+    display: flex;
+    flex-direction: column;
+}
+.info .socials figure{
+    display: flex;
+}
+.info .socials .email,.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.socials .email{
+    display: flex;
+}
+.info .socials span{
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+.info .socials p{
+    font-size: 1rem;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.socials .phone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 12px;
+    font-family: var(--Font-family--);
+    font-size: 1rem;
+    background-color: var(--White--);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s linear;
+    cursor: none;
+}
+.button button:hover{
+    color: var(--Black--);
+}
+.button button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    background-color: var(--Color--);
+    transition: 0.8s height;
+}
+.button button:hover::before{
+    height: 100%;
+}
+.success-popup,
+.error-popup {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid var(--White-Gray--);
+  border-radius: 5px;
+  background-color: var(--White--);
+  font-size: 1.5rem;
+}
+
+.success-popup {
+  color: var(--Success--);
+}
+.error-popup {
+  color: var(--Failed--);
+}
+#mobile{
+    display: none;
+}
+/*responsivenss*/
+@media(max-width:768px){
+    #header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    #icon{
+        display: block;
+    }
+    #desktop #links , #btn{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: white;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    #mobile.active {
+        z-index: 1000;
+        opacity: 1;
+    }
+    
+    #mobile li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 1rem 1.2rem;
+    }
+    
+   #mobile li:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+   #mobile li a:any-link {
+        font-family: var(--TITLE-FONT);
+    }
+    
+    #mobile li:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    .cursor{
+        display: none;
+    }
+      }
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--LightGray--); 
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--Color--); 
+}
+        

@@ -1,1 +1,533 @@
+/*Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root{
+    --Color--:#F04C54;
+    --White--:white;
+    --Black--:black;
+    --Font-family--:'Poiret One', sans-serif;
+}
+
+body{
+    font-family: var(--Font-family--); 
+    cursor: none;
+    overflow-x: hidden;
+}
+/*main*/
+    /*Section - Home*/
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 40px;
+}
+
+#motto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    gap: 50px;
+}
+#motto .btns{
+    display: flex;
+    gap: 50px;
+}
+#motto .Contact,
+#motto .Our-project {
+    padding: 12px;
+    width: 8rem;
+    font-size: 1.2rem;
+    font-family: var(--Font-family--);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: none;
+    z-index: 1;
+    position: relative;
+}
+
+#motto .Contact {
+    background-color: var(--Color--);
+    color: var(--White--);
+    border: none;
+}
+#motto .Our-project {
+    background-color: var(--White--);
+    color: var(--Black--);
+    border: 1px solid var(--Color--);
+}
+#motto .Contact:hover,
+#motto .Our-project:hover {
+    color: var(--Color--);
+    border: 1px solid var(--Color--);
+}
+#motto .Contact::before,
+#motto .Our-project::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.8s width;
+}
+#motto .Contact:hover::before,
+#motto .Our-project:hover::before {
+    width: 100%;
+}
+#motto .headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#motto h1{
+    font-size: 4rem;
+    animation: fade 1s ease-in-out forwards;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#motto h4{
+    font-size: 2rem;
+    animation: left-to-right 1s ease-in-out forwards;
+}
+@keyframes left-to-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+       opacity: 1;
+       transform: translateX(0);
+    }
+}
+#image img{
+    width: 23rem;
+}
+/*Services*/
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px;
+}
+#services #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services #title h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+#services #cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    opacity: 0;
+    animation: fadeUp 1s ease-in-out forwards;
+}
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+#services #cards div{
+    width:20rem;
+    height: 490px;
+    background-color: var(--White--);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);  
+}
+.pre_event,
+.office_management,
+.post_event{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border-top: 10px solid var(--Color--);
+    border-top-right-radius: 10px;
+}
+
+.pre_event h1,
+.office_management h1,
+.post_event h1{
+    font-size: 1.5rem;
+    color: var(--Color--);
+}
+
+.pre_event p,
+.office_management p,
+.post_event p{
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+}
+          /*Section - About*/
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px;
+}
+
+#about .text h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--Color--);
+}
+ 
+#about #description{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+#about #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about #title h1{
+    color: var(--Color--);
+    font-size: 2rem;
+}
+#description .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#description .text p{
+    font-size: 1.2rem;
+    width: 500px;
+    text-align: center;
+}
+
+#description .image img{
+    width: 25rem;
+    height: 20rem;
+}
+
+#description .text .learn{
+    background-color: var(--Color--);
+    color: var(--White--);
+    border: none;
+    padding: 12px;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-family: var(--Font-family--);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: none;
+    z-index: 1;
+    position: relative;
+    transition: color 0.4s linear ;
+}
+
+#description .text .learn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--White--);
+    z-index: -1;
+    transition: 0.8s width;
+}
+
+#description .text .learn:hover{
+    color: var(--Color--);
+    border: 1px solid var(--Color--);
+}
+
+#description .text .learn:hover::before{
+    width: 100%;
+}
+/*Ending*/
+#ending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+    gap: 90px;
+} 
+#ending #marquee{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#ending #marquee marquee{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 250px;
+    gap: 20px;
+}
+#ending #marquee h1{
+    font-size: 2rem;
+    color: var(--Color--);
+}
+#wrapper {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+    height: 400px;
+    background: var(--White--);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+#wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: var(--Color--);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: var(--White--);
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+    }
+i.button:active {
+    cursor: none;
+    transform: scale(0.94) translateY(-50%);
+    }
+i#prev {
+    left: 25px;
+    cursor: none;
+    }
+i#next {
+    right: 25px;
+    cursor: none;
+    }
+.image-container {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    }
+.image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    }
+.carousel img {
+    height: 500px;
+    width: 500px;
+    border-radius: 18px;
+    border: 10px solid var(--White--);
+    object-fit: cover;
+    }
+.hidden{
+    opacity: 0;
+    transform: translateX(-600px);
+    transition: all 3s;
+    }
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    }
+    /*Scroll bar*/
+::-webkit-scrollbar{
+    width: 15px;
+ }   
+::-webkit-scrollbar-thumb{
+    background-color: var(--Color--);
+}
+    @media(max-width:768px){
+    header,main,footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cursor{
+        display: none;
+    }
+    .desktop #links {
+        display: none;
+    }
+    .desktop #btn{
+        display: none;
+    }
+    #motto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #motto .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #motto .text h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #motto .text h4{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobile ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    }
+    @media(max-width:468px){
+    .desktop #btn{
+        display: none;
+    }
+    #motto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #motto .btns a button{
+        font-size: 1rem;
+        padding: 8px;
+        width: 150px;
+    }
+    #motto .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #motto .text h4{
+        display: flex;
+        font-size: 1.2rem;
+        width: 300px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    #motto .text h1{
+        font-size: 2rem;
+        width: 370px;
+        text-align: center;
+    }
+    #home .image img , #about .image img , #ending .img img{
+        width: 300px;
+    }
+    #ending .img img{
+        width: 370px;
+        height: 300px;
+    }
+    .cursor{
+        display: none;
+    }
+    #services .title h1 , #about .title h1 , .testimonails .title h1 , .portfolio .title h1{
+        font-size: 1.5rem;
+    }
+    .cards{
+        width: 100px;
+    }
+    #services{
+        padding: 0;
+    }
+    #about button{
+        font-size: 1rem;
+        width: 150px;
+    }
+    .description .text p{
+        width: 400px;
+        font-size: 1rem;
+    }
+    .description .text a button{
+        font-size: 1rem;
+    }
+
+    .hidden{
+        opacity: 1;
+        transform:none;
+        transition: none;
+        }
+        
+    .show {
+        opacity: 1;
+        transform: none;
+        }
+    #footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .logo_and_join , .subnote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+    .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+    .testimonails{
+        width: 350px;
+    }
+    .portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .portfolio .img img{
+        width: 300px;
+    }
+    }
