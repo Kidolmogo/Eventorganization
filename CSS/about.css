@@ -135,7 +135,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.title h1{
+.whatwedo .title h1{
     color: var(--Color--);
     font-size: 1.5rem;
 }
