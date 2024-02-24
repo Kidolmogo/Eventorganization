@@ -20,7 +20,7 @@ body.hidden{
     display: none;
 }
 /*header*/
-#header nav{
+header nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -317,6 +317,12 @@ footer button:hover::before{
   
 }
 @media(max-width:425px){
+    .desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
     .desktop #links{
         display: none;
         order: 1;
