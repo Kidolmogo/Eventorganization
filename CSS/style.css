@@ -502,7 +502,7 @@ i#next {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 400px;
+        width: 100px;
         font-size: 1rem;
     }
     .description .text a button{
