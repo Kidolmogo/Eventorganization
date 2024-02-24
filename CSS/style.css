@@ -542,16 +542,10 @@ i#next {
     justify-content: flex-start;
     align-items: flex-start;
     }
-    .testimonails{
-        width: 350px;
+    .join input{
+        width: 50px;
     }
-    .portfolio{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .portfolio .img img{
-        width: 300px;
+    .join ion-icon{
+        display: none;
     }
     }
