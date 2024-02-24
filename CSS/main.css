@@ -20,7 +20,7 @@ body.hidden{
     display: none;
 }
 /*header*/
-header nav{
+#header nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
