@@ -265,6 +265,7 @@ body{
 @media(max-width:468px){
     .register{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
