@@ -263,6 +263,29 @@ body{
     }
       }
 @media(max-width:468px){
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px ;
+    }
+    .desktop #links{
+        display: none;
+        order: 1;
+    }
+    .desktop #btn{
+        display: none;
+        order: 2;
+    }
     .register{
         display: flex;
         flex-direction: column;
@@ -272,7 +295,7 @@ body{
     .register input{
         width: 100px;
     }
-    .form form{
+    .register form{
         display: flex;
         justify-content: center;
         align-items: center;
