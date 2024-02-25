@@ -315,7 +315,9 @@ footer button:hover::before{
   .testimonails .profile h2{
     font-size: 0.2;
   }
-  
+  .cursor{
+    display: none;
+  }
 }
 @media(max-width:425px){
     .desktop{
@@ -394,5 +396,7 @@ footer button:hover::before{
     .testimonails .profile h2{
     font-size: 0.2;
     }
-    
+    .cursor{
+        display: none;
+    }
     }
