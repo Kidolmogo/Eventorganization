@@ -149,8 +149,10 @@ body{
     gap: 20px;
 }
 .card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     max-width: 1250px;
     margin: 150px auto;
     padding: 20px;
@@ -509,6 +511,9 @@ body{
         justify-content: center;
         align-items: flex-start;
         gap: 20px;
+    }
+    #about #cards div{
+        width: 346px;
     }
 }
 
