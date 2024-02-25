@@ -135,7 +135,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px;
+    padding: 80px;
 }
 .whatwedo .title {
     display:flex;
@@ -213,6 +213,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
 }
 
 #founders h1{
@@ -291,7 +292,7 @@ body{
 }
 
 #story .text h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--Color--);
 }
 
