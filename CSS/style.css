@@ -502,7 +502,7 @@ i#next {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width: 60px;
+        width: 300px;
         font-size: 1rem;
     }
     #description .text a button{
@@ -544,17 +544,13 @@ i#next {
     #wrapper{
         width: 400px;
     }
-    .description p{
-        font-size: 1.4rem;
-        width: 300px;
-    }
     #footer .logo{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    #description img{
+    #description .image img{
         width: 100px;
         height: 150px;
     }
