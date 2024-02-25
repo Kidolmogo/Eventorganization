@@ -474,12 +474,13 @@ i#next {
         width: 370px;
         text-align: center;
     }
-    #home .image img ,  #ending .img img{
+    #home .image img {
         width: 300px;
     }
-    #ending .img img{
-        width: 370px;
-        height: 300px;
+    #ending{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .cursor{
         display: none;
@@ -544,6 +545,10 @@ i#next {
     #wrapper{
         width: 400px;
     }
+    .carousel img{
+        width: 300px;
+        height: 200px;
+    }
     #footer .logo{
         display: flex;
         justify-content: center;
@@ -551,7 +556,7 @@ i#next {
         flex-direction: column;
     }
     #description .image img{
-        width: 100px;
-        height: 150px;
+        width: 250px;
+        height: 300px;
     }
     }
