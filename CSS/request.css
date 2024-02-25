@@ -172,6 +172,29 @@ main #main .button {
   color: var(--Failed--);
 }
 @media(max-width:468px){
+    .desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px ;
+    }
+    .desktop #links{
+        display: none;
+        order: 1;
+    }
+    .desktop #btn{
+        display: none;
+        order: 2;
+    }
     main #main .form form{
         display: flex;
     }
@@ -179,6 +202,6 @@ main #main .button {
         width: 10rem;
     }
     main #main .form form textarea{
-        columns: 45;
+        width:410px;
     }
 }
