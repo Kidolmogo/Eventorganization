@@ -531,5 +531,27 @@ body{
     #story .text{
         gap: 25px;
     }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    .logo_and_join , .subnote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        }
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        }
+    .join input{
+            width: 50px;
+        }
+    .join ion-icon{
+            display: none;
+        }
 }
 
