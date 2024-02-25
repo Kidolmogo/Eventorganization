@@ -301,7 +301,9 @@ body{
         align-items: center;
         width: 0;
     }
- 
+    .register form label{
+        display: none;
+    }
 }
 ::-webkit-scrollbar{
     width: 15px;
