@@ -70,6 +70,7 @@ main #main .form form textarea{
     resize: none;
     text-align: justify;
     cursor: none;
+    width: 32em;
 }
 main #main .form form input , textarea:focus{
     outline: var(--Color--);
