@@ -262,6 +262,17 @@ body{
         display: none;
     }
       }
+@media(max-width:468px){
+    .register{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .register inputs{
+        width: 100px;
+    }
+ 
+}
 ::-webkit-scrollbar{
     width: 15px;
 }

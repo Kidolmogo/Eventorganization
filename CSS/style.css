@@ -388,6 +388,9 @@ i#next {
     *{
         cursor: none;
     }
+    body{
+        overflow-x: none;
+    }
     header,main,footer{
         display: flex;
         flex-direction: column;
