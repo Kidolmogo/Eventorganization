@@ -172,13 +172,13 @@ main #main .button {
   color: var(--Failed--);
 }
 @media(max-width:468px){
-    #form figure{
+    main #main .form form{
         display: flex;
     }
-    #form figure input{
+    main #main .form form input{
         width: 10rem;
     }
-    #form figure textarea{
+    main #main .form form textarea{
         columns: 45;
     }
 }
