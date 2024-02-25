@@ -558,6 +558,9 @@ body{
     #founders #main{
         width: 400px;
     }
+    #teams{
+        gap: 34px;
+    }
     .blured , .non-blured{
         display: flex;
         justify-content: center;
