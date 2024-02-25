@@ -300,6 +300,7 @@ body{
         justify-content: center;
         align-items: center;
         width: 0;
+        padding: 10px;
     }
     .register form label{
         display: none;
