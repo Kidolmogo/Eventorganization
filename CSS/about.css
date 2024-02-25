@@ -21,6 +21,7 @@ body{
     align-items: center;
     font-size: 4rem;
     padding:120px;
+    width: 100%;
     background-image: url("background\ \(2\).png");
     background-size: cover;
 }
@@ -374,7 +375,12 @@ body{
     opacity: 1;
     transform: translateX(0);
   }
-  
+.blured,.non-blured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 /*Scroll bar*/
 ::-webkit-scrollbar{
     width: 15px;
@@ -518,7 +524,7 @@ body{
     }
     #story .image img{
         width: 350px;
-        height: 296;
+        height: 296px;
     }
     #story .text p{
         font-size: 1rem;
@@ -530,6 +536,9 @@ body{
     }
     #story .text{
         gap: 25px;
+    }
+    #founders #main{
+        width: 344px;
     }
     #footer{
         display: flex;
