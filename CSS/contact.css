@@ -272,6 +272,11 @@ body{
     .register input{
         width: 100px;
     }
+    .form form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
  
 }
 ::-webkit-scrollbar{
