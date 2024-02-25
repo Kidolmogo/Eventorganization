@@ -474,7 +474,7 @@ i#next {
         width: 370px;
         text-align: center;
     }
-    #home .image img , #about .image img , #ending .img img{
+    #home .image img ,  #ending .img img{
         width: 300px;
     }
     #ending .img img{
