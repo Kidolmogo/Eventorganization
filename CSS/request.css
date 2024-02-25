@@ -171,3 +171,14 @@ main #main .button {
 .error-popup {
   color: var(--Failed--);
 }
+@media(max-width:468px){
+    #form figure{
+        display: flex;
+    }
+    #form figure input{
+        width: 10rem;
+    }
+    #form figure textarea{
+        columns: 45;
+    }
+}
