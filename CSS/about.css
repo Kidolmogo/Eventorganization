@@ -131,6 +131,10 @@ body{
 }
 /*Whatwedo*/
 .whatwedo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 60px;
 }
 .whatwedo .title {
@@ -152,10 +156,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    margin: 150px auto;
-    padding: 20px;
+    max-width: 1200px;
     gap: 70px;
+    background: var(--Color--);
+    color: var(--Color--); 
 }
 .card-list .card-item {
     background: var(--White--);
@@ -176,13 +180,14 @@ body{
     object-fit: cover;
 }
 .card-list span {
-    display: inline-block;
-    background: #F7DFF5;
-    margin-top: 32px;
-    padding: 8px 15px;
-    font-size: 0.75rem;
-    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7DFF5;
+    font-size: 1.2rem;
     font-weight: 600;
+    width: 200px;
+    border-radius: 10px;
 }
 .card-list .developer {
     background-color: #F7DFF5; 
@@ -202,32 +207,12 @@ body{
     margin-top: 28px;
     font-weight: 600;
 }
-.card-item .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-35deg);
-    height: 40px;
-    width: 40px;
-    color: var(--Black--);
-    border: 1px solid var(--Black--);
-    border-radius: 50%;
-    margin-top: 40px;
-    transition: 0.2s ease;
-}
-.card-list .card-item:hover .arrow  {
-    background: var(--Color--);
-    color: var(--Color--); 
-}
 /*Founders*/
 #founders{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 8%;
-    padding: 40px;
 }
 
 #founders h1{
@@ -363,6 +348,12 @@ body{
     font-size: 1rem;
     color: var(--Black--);
 }
+.blured , .non-blured{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .hidden{
     opacity: 0;
     transform: translateX(-600px);
@@ -402,7 +393,7 @@ body{
         text-align: center;
     }
     #whatwedo .title h1 , #founders #title h1 , #story .text h1 , #teams #title h1{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     #about #cards article{
         width: 320px;
@@ -560,12 +551,6 @@ body{
     }
     #teams{
         gap: 34px;
-    }
-    .blured , .non-blured{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
     .card-list{
         flex-wrap: wrap;
