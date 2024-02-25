@@ -201,7 +201,7 @@ main #main .button {
     main #main .form form input{
         width: 10rem;
     }
-    main #main .form form textarea{
+    main #main .form form figure textarea{
         width:410px;
     }
 }
