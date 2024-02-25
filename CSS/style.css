@@ -546,7 +546,7 @@ i#next {
     }
     .description p{
         font-size: 1.4rem;
-        width: 100px;
+        width: 300px;
     }
     #footer .logo{
         display: flex;
@@ -556,6 +556,6 @@ i#next {
     }
     #description img{
         width: 100px;
-        height: 200px;
+        height: 150px;
     }
     }
