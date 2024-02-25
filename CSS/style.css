@@ -388,9 +388,7 @@ i#next {
     *{
         cursor: none;
     }
-    body{
-        overflow-x: none;
-    }
+   
     header,main,footer{
         display: flex;
         flex-direction: column;
@@ -443,7 +441,9 @@ i#next {
     }
     }
     @media(max-width:468px){
-    
+     body{
+            overflow-x: none;
+        }
     .desktop #btn{
         display: none;
     }
@@ -559,7 +559,7 @@ i#next {
         flex-direction: column;
     }
     #description .image img{
-        width: 250px;
+        width: 200px;
         height: 300px;
     }
     }
