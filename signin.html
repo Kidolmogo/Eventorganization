@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inria+Sans:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/siginin.css">
-  <link rel="stylesheet" href="CSS/main.css">
-  <title>Sign-in</title>
-</head>
-<body>
-  <!--header-->
-  <header>
-    <nav class="desktop">
-      <div id="logo">
-        <span>Comapny name</span>
-      </div>
-      <ul id="links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div id="btn">
-        <a href="Sorry.html"><button>Held Projects</button></a>
-        <a href="signin.html"><button>Get started</button></a>
-      </div>
-    </nav>
-  </header>
-  <!--Main-->
-  <main>
-    <section id="main">
-      <h1>Sign-in</h1>
-      <div id="inputs">
-        <form action="" method="post">
-          <input type="text" placeholder="Full name" name="name">
-          <input type="email" placeholder="Email">
-          <input type="password" placeholder="Password">
-        </form>
-      </div>
-      <div id="button">   
-        <a href=""><button class="signin">Sign-in</button></a>
-        <a href="request.html"><button class="request">Request event</button></a>
-      </div>
-    </section>
-  </main>
-  <!--Cursor-->
-  <div class="cursor">
-    <img src="Images/Select Cursor.png" alt="">
-  </div>
-  <!--Backend Scripts-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">emailjs.init('u7_xV1i8uJHXbVsUk')</script>
-  <!--Icon scripts-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!--Local scripts-->
-  <script src="JavaScript/script.js"></script>
-  <script src="JavaScript/send.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inria+Sans:wght@300&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/siginin.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Sign-in</title>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <!--Desktop navigation-->
+      <nav class="desktop">
+        <section id="logo">
+          <a href="home.html"><img src="Images/logo.png" alt="" /></a>
+        </section>
+        <section id="links">
+          <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+        <section id="btn">
+          <a href="request.html"><button>Request event</button></a>
+        </section>
+        <section id="hamburger">
+          <li class="hamburger_icon">
+            <span></span>
+          </li>
+        </section>
+      </nav>
+      <!--Mobile navigation-->
+      <nav class="mobile">
+        <ul>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="request.html"><button>Request event</button></a>
+          </li>
+          <li>
+            <a href="signin.html"><button>Get started</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-->
+    <main>
+      <section id="main">
+        <h1>Sign-in</h1>
+        <div id="inputs">
+          <form action="" method="post">
+            <input type="text" placeholder="Full name" name="name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+          </form>
+        </div>
+        <div id="button">
+          <a href=""><button class="signin">Sign-in</button></a>
+          <a href="request.html"
+            ><button class="request">Request event</button></a
+          >
+        </div>
+      </section>
+    </main>
+    <!--Cursor-->
+    <div class="cursor">
+      <img src="Images/Select Cursor.png" alt="" />
+    </div>
+    <!--Backend Scripts-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("u7_xV1i8uJHXbVsUk");
+    </script>
+    <!--Icon scripts-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--Local scripts-->
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/send.js"></script>
+  </body>
 </html>
